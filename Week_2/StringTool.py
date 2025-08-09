@@ -3,24 +3,30 @@
 
 class StringTool:
 
-    def __init__(self,initalStr):
-        self.initialStr = initalStr
-        pass
+    
 
-    def findCharacter(self,character) -> int:
-        return self.initialStr.find(character)
+    def findCharacter(self,strParameter:str,character) -> int:
+        return strParameter.find(character)
         
 
-    def length(self)->int:
-        return len(self.initialStr)
+    def length(self,strParameter:str)->int:
+        return len(strParameter)
     
 
-    def upperConvert(self)->str:
-        return self.initialStr.upper()
+    def upperConvert(self,strParameter:str)->str:
+        return strParameter.upper()
     
 
 
-str = StringTool("abcdefg")
-print(f"the position of the charactor is : {str.findCharacter('c')}")
-print(f"the length of it is {str.length()}")
-print(f"the upper format of it is {str.upperConvert()}")
+def main():
+    strtool = StringTool()
+    print(f"the position of the charactor is : {strtool.findCharacter("abcdefg",'c')}")
+    print(f"the length of it is {strtool.length("abcdefg")}")
+    print(f"the upper format of it is {strtool.upperConvert("abdcdddfdfdsafadsfadf")}")
+
+
+
+if __name__ == "__main__":
+    main()
+
+
