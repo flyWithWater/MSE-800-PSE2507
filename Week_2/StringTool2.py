@@ -9,7 +9,7 @@ class StrTool2:
 
     def search(self):
      
-        array = self.inputedText.split(' ')
+        array = self.inputedText.strip().split(' ')
 
         return len(array)
 
