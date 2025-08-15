@@ -1,6 +1,7 @@
 
 
-
+# Develop a new project that reads demo.txt and returns the total number of words. 
+# Share the GitHub repository link and a screenshot of the result.
 
 class TxtFileHandler:
     
@@ -28,8 +29,22 @@ class TxtFileHandler:
 
 
 
+    def countWords(self)->int:
+        count = 0
+        
+        with open(self.file_name) as f:
+            for line in f:
+                if line == "\n":
+                    continue
+                else:
+                    words = line.split(" ")
+                    length = len(words)
+                    print(f"{line}    ---  words:{count}")
 
-
+                    count += length
+                    print(length)
+                    print(" ")
+        return count
 
 
 
@@ -40,10 +55,9 @@ class TxtFileHandler:
 
 def main():
     myfile = TxtFileHandler("/Users/zcs/github/MSE-800-PSE2507/Week_3/demo_file.txt")
-    myfile.read()  
-
-    myfile.write()
-  
+    wordsCount = myfile.countWords()
+    
+    print(f"The total word count of demo_file.txt is {wordsCount}")
 
 
 if __name__ == "__main__":
