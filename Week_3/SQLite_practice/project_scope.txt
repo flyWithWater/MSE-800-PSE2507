@@ -1,0 +1,6 @@
+
+ Project scope:
+    The project is aim to help store the information containsed the classes, the students, the Courses and the lecturers.
+    
+    
+

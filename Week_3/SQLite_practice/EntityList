@@ -1,0 +1,48 @@
+
+ 
+Entity:
+    1. Student
+        studentId;
+        name;
+        gender;
+        Brithday;
+        phoneNumber;
+        address;
+        email;
+        
+    2. Lecturer
+        id;
+        Name;
+        address;
+        department;
+        phoneNumber;
+        email;
+
+    3. Student-lecturer Relationship
+        studentId;
+        lecturerID;
+        
+    4. Course 
+        courseID;
+        courseName;
+        hours;
+        level;
+
+   
+
+    5. Course-lecturer relationship
+        courseID;
+        lecturerID;
+
+    
+    6. Class
+        ClassID;
+        classScheduleID;
+        Faculty id;
+        CourseID;
+        StudentID;
+    
+    
+    7. Class-lecture relationship
+        ClassID;
+        LecturerID;
