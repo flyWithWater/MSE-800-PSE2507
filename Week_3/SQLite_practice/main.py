@@ -1,4 +1,5 @@
 
+from DataBaseManage import createTable()
 
 
 
