@@ -40,17 +40,23 @@ class PrimarySchoolStudent:
         return self.__grade
     
 
+class SubStudent(Student):
+
+
+    def print_score(self):
+        print(self.__gender)
 
 
 def main():
-    s = Student('Ali', 20,"female")
-    print(s.name) # accessible​
-    print(s._age) # discouraged​
-    print(s.get_grade()) # correct way
+    s = SubStudent('Ali', 20,"female")
+    s.print_score()
+    # print(s.name) # accessible​
+    # print(s._age) # discouraged​
+    # print(s.get_grade()) # correct way
 
-    pss = PrimarySchoolStudent("zhang",10,100,"male")
-    print(pss.name)
-    print(pss.get_grade)
+    # pss = PrimarySchoolStudent("zhang",10,100,"male")
+    # print(pss.name)
+    # print(pss.get_grade)
 
 
 if __name__=="__main__":
