@@ -53,9 +53,9 @@ class PayPalPayment:
 """
     Characteristics of Factory Method Pattern:
     1. Seperates the object creating code from the area where we use the object.
-         -> When we need to add a new payment method, we only need to create a new factory class without modifying the existing code.
+         -> When we need to add a new payment method, we only need to create a new Payment class and modify the factory class. The payment handler class remains unchanged.
 
-    2. Every time we need to add a new payment method, we have to create a new factory class and a new payment class. It can lead to an increase in the number of classes in the code level.
+    
 """
 
 class PaymentFactory:
@@ -82,33 +82,18 @@ class PaymentHandlerWithFactory:
 
 
 
-class AbstractPaymentFactory(ABC):
-    @abstractmethod
-    def create_payment_handler(self)->PaymentHandler:
-        pass
-
-   
-
-class CreditCardPaymentFactory(AbstractPaymentFactory):
-    def create_payment_handler(self):
-        return CreditCardPayment()
-
-class PayPalPaymentFactory(AbstractPaymentFactory):
-    def create_payment_handler(self):
-        return PayPalPayment()
-
-
+ 
   
         
 class PaymentFactory:
     @staticmethod
-    def get_payment_factory(payment_type):
+    def get_payment(payment_type)-> AbstractPayment:
         if payment_type == "credit_card":
-            return CreditCardPaymentFactory()
+            return CreditCardPayment()
         elif payment_type == "paypal":
-            return PayPalPaymentFactory()
+            return PayPalPayment()
         elif payment_type == "cash":
-            return CashPaymentFactory()
+            return CashPayment()
         else:
             raise ValueError("Unknown payment type")
 
@@ -119,6 +104,3 @@ class CashPayment(AbstractPayment):
 
 
 
-class CashPaymentFactory(AbstractPaymentFactory):
-    def create_payment_handler(self):
-        return CashPayment()
