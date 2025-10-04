@@ -28,24 +28,23 @@ class TextAnalyzer:
             return sum(self.count_uppercase(item) for item in text if isinstance(item, str))
         else:
             return -1
-    
     def count_digits(self,text) -> int:
-       """Count the number of digit characters in the input text."""
-       if isinstance(text,str):
-           return sum(1 for item in text if item.isdigit())
-       elif isinstance(text,list):
-           return sum(self.count_digits(item) for item in text if isinstance(item,str))
-       else:
-           return -1
+        """Count the number of digit characters in the input text."""
+        if isinstance(text,str):
+            return sum(1 for item in text if item.isdigit())
+        elif isinstance(text,list):
+            return sum(self.count_digits(item) for item in text if isinstance(item,str))
+        else:
+            return -1
        
     def count_special_characters(self,text) -> int:
-       """Count the number of special characters in the input text."""
-       if isinstance(text,str):
-           return sum(1 for item in text if (not item.isalnum()) and not item.isspace())
-       elif isinstance(text,list):
-           return sum(self.count_special_characters(item) for item in text if isinstance(item,str))
-       else:
-            return -1
+        """Count the number of special characters in the input text."""
+        if isinstance(text,str):
+            return sum(1 for item in text if (not item.isalnum()) and not item.isspace())
+        elif isinstance(text,list):
+            return sum(self.count_special_characters(item) for item in text if isinstance(item,str))
+        else:
+             return -1
        
 
 
