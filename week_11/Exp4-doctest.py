@@ -8,7 +8,14 @@ The example module supplies one function, factorial().  For example,
  
 """
 
+# the function need to be test by the doctest.
 def factorial(n):
+    """
+    The doctest code need to be in the comment part surrounded by \"\"\" and after the function declaration, not before the function declaration.
+    The sign of the doctest is >>> started in a new line in the comment, the frist line is just the calling code of the function. and then the second line is the expected result of the calling.
+    
+    """
+
     """Return the factorial of n, an exact integer >= 0.
 
     >>> [factorial(n) for n in range(6)]
