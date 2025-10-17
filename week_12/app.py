@@ -22,6 +22,11 @@ def variableFunction(gender:str):
         </div>
     """
 
+@app.route("/cal/<int:number>")
+def show_square(number:int):
+    return f"the squre of {number} is {number**2}"
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
