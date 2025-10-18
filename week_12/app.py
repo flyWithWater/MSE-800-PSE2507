@@ -2,7 +2,15 @@ from flask import Flask, request, redirect, url_for, send_from_directory, render
 import os
 from werkzeug.utils import secure_filename
 
+
+
 app = Flask(__name__)
+from bmi import bmi
+
+
+app.register_blueprint(bmi)
+
+
 
 # --- config ---
 UPLOAD_FOLDER = "uploads"
