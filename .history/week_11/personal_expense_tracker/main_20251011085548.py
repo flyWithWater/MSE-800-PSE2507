@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+
+    CarRentalSystemDatabase.create_table()

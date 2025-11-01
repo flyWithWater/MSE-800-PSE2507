@@ -1,0 +1,9 @@
+
+"""
+Explain briefly by listing all functional and non-functional requirements for your group project (Assessment 2). 
+Clearly indicate which requirements have passed and which have not passed yet. 
+Share your work as a .txt file on your GitHub or submit it directly as a .txt file here, 
+including the project title and team members’ full names with group name.
+"""
+
+

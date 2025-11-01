@@ -1,0 +1,7 @@
+
+
+
+week_12/Django/staticfiles/*
+polls/*.pyc
+mysite/*/*.pyc 
+Week_3/Sample_code_SQLite3/__pycache__/

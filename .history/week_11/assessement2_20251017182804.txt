@@ -1,0 +1,39 @@
+
+"""
+Explain briefly by listing all functional and non-functional requirements for your group project (Assessment 2). 
+Clearly indicate which requirements have passed and which have not passed yet. 
+Share your work as a .txt file on your GitHub or submit it directly as a .txt file here, 
+including the project title and team members’ full names with group name.
+"""
+
+
+        Group-E    
+
+Member: Changsheng Zhang   &  Philip Niron Nithianandan
+
+Project Name: Care and Cure
+Project brief introduce:   A System for the Emergency department in the hospital to triage patients and assign them into different doctor's waiting list, 
+including the prescription process.
+
+
+
+Functional requirements:
+
+   1.The user management feature;  
+   2.The symptom collection process;
+   3.The severity and doctor type analysis with RAG and LLM;
+   4.Doctor's waiting list;
+   5.The prescription;
+   6. Maori Language support;   
+
+
+
+
+
+
+
+    Non-Functional requirements:
+        1. 
+        2. 
+        3. 
+

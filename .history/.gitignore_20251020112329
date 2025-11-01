@@ -1,0 +1,6 @@
+
+
+
+week_12/Django/staticfiles/*
+polls/*.pyc
+mysite/*/*.pyc 

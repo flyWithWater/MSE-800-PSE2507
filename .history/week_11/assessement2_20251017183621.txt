@@ -1,0 +1,22 @@
+Group-E  - Care N Cure 
+
+Member: Changsheng Zhang   &  Philip Niron Nithianandan
+
+Project Name: Care N Cure
+Project brief introduce:   A System for the Emergency department in the hospital to triage patients and assign them into different doctor's waiting list, 
+including the prescription process.
+
+Functional requirements:
+   1.The user management feature;  - In progress
+   2.The symptom collection process; - Done
+   3.The severity and doctor type analysis with RAG and LLM; - 60% done
+   4.Doctor's waiting list; - Todo
+   5.The prescription; - Todo
+   6. Maori Language support; - Todo
+
+Non-Functional requirements:
+    1. Performance: System must respond to patient triage requests within 5 seconds;
+    2. Security: user information, at least password need to be stored securely;
+    3. Accessibility: Support both English and Maori languages with clear UI for all users
+    4. Compatibility: Work on tablets and desktop computers used in hospital settings
+    5. Data Integrity: Ensure accurate patient information transfer between triage and prescription systems
