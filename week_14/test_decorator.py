@@ -7,16 +7,15 @@ def log_decorator(func):
     def wrapper(*args, **kwargs):
         #it is printing the original function's name and 
         print(f"Calling {func.__name__} with {args}, {kwargs}")
-        start_nanoseconds = int(round(time.time()*1000000))
-        print(f"start_millis:{start_nanoseconds}")
+        start_microseconds = int(round(time.time()*1000000))
         # this is a call of the original function, and result are just the result we get from the original function
         result = func(*args, **kwargs)
-        end_nanoseconds = int(round(time.time()*1000000))
+        end_microseconds = int(round(time.time()*1000000))
 
-        execution_nanoseconds = end_nanoseconds-start_nanoseconds
+        execution_microseconds = end_microseconds-start_microseconds
 
         #func is just the object of the function . the syntax is printing its name and actual result from it.
-        print(f"{func.__name__} executed {execution_nanoseconds} nanoseconds , returned {result}")
+        print(f"{func.__name__} executed {execution_microseconds} microseconds , returned {result}")
         return result
     return wrapper
 
